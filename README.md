@@ -1,4 +1,4 @@
-# TestNG_Maven-demo.midtrans.com
+# demo.midtrans.com-FinalProject-Selenium-mvn-Testnj
 
 ## Technology used:
 - Tool: Selenium
