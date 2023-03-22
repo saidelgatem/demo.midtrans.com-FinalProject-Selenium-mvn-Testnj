@@ -1,4 +1,4 @@
-# demo.midtrans.com-FinalProject-Selenium-mvn-Testnj
+# demo.midtrans.com FinalProject
 
 ## Technology used:
 - Tool: Selenium
