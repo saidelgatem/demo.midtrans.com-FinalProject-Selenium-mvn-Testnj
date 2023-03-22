@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Running tests on https://demo.midtrans.com/]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Running regression test(failed)" verbose="0">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="pagetests.HomePageTest">
+        <methods>
+          <include name="VerifyInputIsEditable"/>
+          <include name="verifyOrderAmountAfterApplyingCoupon"/>
+          <include name="VerifyPaymentPageFromOrderSummary"/>
+          <include name="test12"/>
+          <include name="VerifyCheckoutPopup"/>
+          <include name="tearUp"/>
+          <include name="Goto"/>
+          <include name="tearDown"/>
+          <include name="VerifyClickOnCheckout"/>
+          <include name="VerifyProductDetailsonOrderSummeryPopup"/>
+          <include name="VerifyAllPaymentOptionsListedOnPayment"/>
+          <include name="test15"/>
+          <include name="test14"/>
+          <include name="test13"/>
+          <include name="VerifyPillowPrice"/>
+          <include name="VerifyUserClickingOnDebitOrCreditCardRedirectsToCardDetailsScreen"/>
+          <include name="test11"/>
+        </methods>
+      </class> <!-- pagetests.HomePageTest -->
+    </classes>
+  </test> <!-- Running regression test(failed) -->
+</suite> <!-- Failed suite [Running tests on https://demo.midtrans.com/] -->

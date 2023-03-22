@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Running tests on https://demo.midtrans.com/]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Running regression test(failed)" verbose="0">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="pagetests.HomePageTest">
+        <methods>
+          <include name="VerifyPillowPrice"/>
+          <include name="tearDown"/>
+          <include name="tearUp"/>
+          <include name="VerifyClickingOnOKButtonWithInValidOTPRedirectToOrderSuccssfullscreen"/>
+          <include name="Goto"/>
+        </methods>
+      </class> <!-- pagetests.HomePageTest -->
+    </classes>
+  </test> <!-- Running regression test(failed) -->
+</suite> <!-- Failed suite [Running tests on https://demo.midtrans.com/] -->

@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Running_tests_on_https___demo_midtrans_com_" class="navigator-link">
+              <span class="suite-name border-failed">Running tests on https://demo.midtrans.com/</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Running_tests_on_https___demo_midtrans_com_" class="navigator-link ">
+                    <span>C:\Users\trtr\IdeaProjects\FinalProject\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Running_tests_on_https___demo_midtrans_com_" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Running_tests_on_https___demo_midtrans_com_" class="navigator-link ">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Running_tests_on_https___demo_midtrans_com_" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Running_tests_on_https___demo_midtrans_com_" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Running_tests_on_https___demo_midtrans_com_" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Running_tests_on_https___demo_midtrans_com_" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">15 methods, 2 failed,   13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Running_tests_on_https___demo_midtrans_com_" class="hide-methods failed suite-Running_tests_on_https___demo_midtrans_com_"> (hide)</a> <!-- hide-methods failed suite-Running_tests_on_https___demo_midtrans_com_ -->
+                      <a href="#" panel-name="suite-Running_tests_on_https___demo_midtrans_com_" class="show-methods failed suite-Running_tests_on_https___demo_midtrans_com_"> (show)</a> <!-- show-methods failed suite-Running_tests_on_https___demo_midtrans_com_ -->
+                    </span>
+                    <div class="method-list-content failed suite-Running_tests_on_https___demo_midtrans_com_">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Running_tests_on_https___demo_midtrans_com_" title="pagetests.HomePageTest" class="method navigator-link" hash-for-method="VerifyClickingOnOKButtonWithInValidOTPRedirectToOrderSuccssfullscreen">VerifyClickingOnOKButtonWithInValidOTPRedirectToOrderSuccssfullscreen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Running_tests_on_https___demo_midtrans_com_" title="pagetests.HomePageTest" class="method navigator-link" hash-for-method="VerifyPillowPrice">VerifyPillowPrice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Running_tests_on_https___demo_midtrans_com_ -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Running_tests_on_https___demo_midtrans_com_" class="hide-methods passed suite-Running_tests_on_https___demo_midtrans_com_"> (hide)</a> <!-- hide-methods passed suite-Running_tests_on_https___demo_midtrans_com_ -->
+                      <a href="#" panel-name="suite-Running_tests_on_https___demo_midtrans_com_" class="show-methods passed suite-Running_tests_on_https___demo_midtrans_com_"> (show)</a> <!-- show-methods passed suite-Running_tests_on_https___demo_midtrans_com_ -->
+                    </span>
+                    <div class="method-list-content passed suite-Running_tests_on_https___demo_midtrans_com_">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Running_tests_on_https___demo_midtrans_com_" title="pagetests.HomePageTest" class="method navigator-link" hash-for-method="EnterValidCardDetailsAndClickPayNow">EnterValidCardDetailsAndClickPayNow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Running_tests_on_https___demo_midtrans_com_" title="pagetests.HomePageTest" class="method navigator-link" hash-for-method="VerifyAllPaymentOptionsListedOnPayment">VerifyAllPaymentOptionsListedOnPayment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Running_tests_on_https___demo_midtrans_com_" title="pagetests.HomePageTest" class="method navigator-link" hash-for-method="VerifyCheckoutPopup">VerifyCheckoutPopup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Running_tests_on_https___demo_midtrans_com_" title="pagetests.HomePageTest" class="method navigator-link" hash-for-method="VerifyClickOnCheckout">VerifyClickOnCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Running_tests_on_https___demo_midtrans_com_" title="pagetests.HomePageTest" class="method navigator-link" hash-for-method="VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen">VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Running_tests_on_https___demo_midtrans_com_" title="pagetests.HomePageTest" class="method navigator-link" hash-for-method="VerifyClickingOnOKButtonWithValidOTPRedirectToOrderSuccssfullscreen">VerifyClickingOnOKButtonWithValidOTPRedirectToOrderSuccssfullscreen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Running_tests_on_https___demo_midtrans_com_" title="pagetests.HomePageTest" class="method navigator-link" hash-for-method="VerifyClickingOnPaynowRedirectUserToBankPaymentScreen">VerifyClickingOnPaynowRedirectUserToBankPaymentScreen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Running_tests_on_https___demo_midtrans_com_" title="pagetests.HomePageTest" class="method navigator-link" hash-for-method="VerifyInputIsEditable">VerifyInputIsEditable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Running_tests_on_https___demo_midtrans_com_" title="pagetests.HomePageTest" class="method navigator-link" hash-for-method="VerifyInputsAreVisible">VerifyInputsAreVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Running_tests_on_https___demo_midtrans_com_" title="pagetests.HomePageTest" class="method navigator-link" hash-for-method="VerifyPaymentPageFromOrderSummary">VerifyPaymentPageFromOrderSummary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Running_tests_on_https___demo_midtrans_com_" title="pagetests.HomePageTest" class="method navigator-link" hash-for-method="VerifyProductDetailsonOrderSummeryPopup">VerifyProductDetailsonOrderSummeryPopup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Running_tests_on_https___demo_midtrans_com_" title="pagetests.HomePageTest" class="method navigator-link" hash-for-method="VerifyUserClickingOnDebitOrCreditCardRedirectsToCardDetailsScreen">VerifyUserClickingOnDebitOrCreditCardRedirectsToCardDetailsScreen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Running_tests_on_https___demo_midtrans_com_" title="pagetests.HomePageTest" class="method navigator-link" hash-for-method="verifyOrderAmountAfterApplyingCoupon">verifyOrderAmountAfterApplyingCoupon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Running_tests_on_https___demo_midtrans_com_ -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Running_tests_on_https___demo_midtrans_com_" class="panel Running_tests_on_https___demo_midtrans_com_">
+          <div class="suite-Running_tests_on_https___demo_midtrans_com_-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">pagetests.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyClickingOnOKButtonWithInValidOTPRedirectToOrderSuccssfullscreen">
+                  </a> <!-- VerifyClickingOnOKButtonWithInValidOTPRedirectToOrderSuccssfullscreen -->
+                  <span class="method-name">VerifyClickingOnOKButtonWithInValidOTPRedirectToOrderSuccssfullscreen</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //span[@class=&apos;help-block&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pageobjects.HomePage.containsText(HomePage.java:205)
+	at pageobjects.HomePage.RedirectingToBankPaymentScreen(HomePage.java:195)
+	at pagetests.HomePageTest.VerifyClickingOnOKButtonWithInValidOTPRedirectToOrderSuccssfullscreen(HomePageTest.java:171)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;help-block&apos;]&quot;}
+  (Session info: MicrosoftEdge=110.0.1587.63)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [0d25934a7f05870968736f13cf0f4dfa, findElement {using=xpath, value=//span[@class=&apos;help-block&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 110.0.1587.63, ms:edgeOptions: {debuggerAddress: localhost:61084}, msedge: {msedgedriverVersion: 110.0.1587.63 (b26c9b8fc01e..., userDataDir: C:\Users\trtr\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61084/devtoo..., se:cdpVersion: 110.0.1587.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d25934a7f05870968736f13cf0f4dfa
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 33 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyPillowPrice">
+                  </a> <!-- VerifyPillowPrice -->
+                  <span class="method-name">VerifyPillowPrice</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [20,000] but found [null]
+	at pageobjects.HomePage.amountInShoppingCart(HomePage.java:141)
+	at pagetests.HomePageTest.VerifyPillowPrice(HomePageTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Running_tests_on_https___demo_midtrans_com_-class-failed -->
+          <div class="suite-Running_tests_on_https___demo_midtrans_com_-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">pagetests.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="EnterValidCardDetailsAndClickPayNow">
+                  </a> <!-- EnterValidCardDetailsAndClickPayNow -->
+                  <span class="method-name">EnterValidCardDetailsAndClickPayNow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyAllPaymentOptionsListedOnPayment">
+                  </a> <!-- VerifyAllPaymentOptionsListedOnPayment -->
+                  <span class="method-name">VerifyAllPaymentOptionsListedOnPayment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyCheckoutPopup">
+                  </a> <!-- VerifyCheckoutPopup -->
+                  <span class="method-name">VerifyCheckoutPopup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyClickOnCheckout">
+                  </a> <!-- VerifyClickOnCheckout -->
+                  <span class="method-name">VerifyClickOnCheckout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen">
+                  </a> <!-- VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen -->
+                  <span class="method-name">VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyClickingOnOKButtonWithValidOTPRedirectToOrderSuccssfullscreen">
+                  </a> <!-- VerifyClickingOnOKButtonWithValidOTPRedirectToOrderSuccssfullscreen -->
+                  <span class="method-name">VerifyClickingOnOKButtonWithValidOTPRedirectToOrderSuccssfullscreen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyClickingOnPaynowRedirectUserToBankPaymentScreen">
+                  </a> <!-- VerifyClickingOnPaynowRedirectUserToBankPaymentScreen -->
+                  <span class="method-name">VerifyClickingOnPaynowRedirectUserToBankPaymentScreen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyInputIsEditable">
+                  </a> <!-- VerifyInputIsEditable -->
+                  <span class="method-name">VerifyInputIsEditable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyInputsAreVisible">
+                  </a> <!-- VerifyInputsAreVisible -->
+                  <span class="method-name">VerifyInputsAreVisible</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyPaymentPageFromOrderSummary">
+                  </a> <!-- VerifyPaymentPageFromOrderSummary -->
+                  <span class="method-name">VerifyPaymentPageFromOrderSummary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyProductDetailsonOrderSummeryPopup">
+                  </a> <!-- VerifyProductDetailsonOrderSummeryPopup -->
+                  <span class="method-name">VerifyProductDetailsonOrderSummeryPopup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyUserClickingOnDebitOrCreditCardRedirectsToCardDetailsScreen">
+                  </a> <!-- VerifyUserClickingOnDebitOrCreditCardRedirectsToCardDetailsScreen -->
+                  <span class="method-name">VerifyUserClickingOnDebitOrCreditCardRedirectsToCardDetailsScreen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOrderAmountAfterApplyingCoupon">
+                  </a> <!-- verifyOrderAmountAfterApplyingCoupon -->
+                  <span class="method-name">verifyOrderAmountAfterApplyingCoupon</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Running_tests_on_https___demo_midtrans_com_-class-passed -->
+        </div> <!-- panel Running_tests_on_https___demo_midtrans_com_ -->
+        <div panel-name="test-xml-Running_tests_on_https___demo_midtrans_com_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\trtr\IdeaProjects\FinalProject\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Running tests on https://demo.midtrans.com/&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Running regression test&quot; verbose=&quot;0&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;regression&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;pagetests.HomePageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Running regression test --&gt;
+&lt;/suite&gt; &lt;!-- Running tests on https://demo.midtrans.com/ --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Running_tests_on_https___demo_midtrans_com_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Running tests on https://demo.midtrans.com/</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Running regression test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Running_tests_on_https___demo_midtrans_com_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Running tests on https://demo.midtrans.com/</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">EnterValidCardDetailsAndClickPayNow</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyAllPaymentOptionsListedOnPayment</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyCheckoutPopup</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyClickOnCheckout</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyClickingOnOKButtonWithInValidOTPRedirectToOrderSuccssfullscreen</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyClickingOnOKButtonWithValidOTPRedirectToOrderSuccssfullscreen</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyClickingOnPaynowRedirectUserToBankPaymentScreen</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyInputIsEditable</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyInputsAreVisible</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyPaymentPageFromOrderSummary</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyPillowPrice</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyProductDetailsonOrderSummeryPopup</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyUserClickingOnDebitOrCreditCardRedirectsToCardDetailsScreen</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyOrderAmountAfterApplyingCoupon</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">EnterValidCardDetailsAndClickPayNow</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyCheckoutPopup</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyClickOnCheckout</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyClickingOnOKButtonWithValidOTPRedirectToOrderSuccssfullscreen</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyPaymentPageFromOrderSummary</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyUserClickingOnDebitOrCreditCardRedirectsToCardDetailsScreen</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Running_tests_on_https___demo_midtrans_com_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Running tests on https://demo.midtrans.com/</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Running_tests_on_https___demo_midtrans_com_');
+function tableData_Running_tests_on_https___demo_midtrans_com_() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(15);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'VerifyClickingOnOKButtonWithInValidOTPRedirectToOrderSuccssfullscreen')
+data.setCell(0, 2, 'pagetests.HomePageTest')
+data.setCell(0, 3, 73446);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'VerifyClickingOnOKButtonWithValidOTPRedirectToOrderSuccssfullscreen')
+data.setCell(1, 2, 'pagetests.HomePageTest')
+data.setCell(1, 3, 25640);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen')
+data.setCell(2, 2, 'pagetests.HomePageTest')
+data.setCell(2, 3, 14817);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'VerifyClickingOnPaynowRedirectUserToBankPaymentScreen')
+data.setCell(3, 2, 'pagetests.HomePageTest')
+data.setCell(3, 3, 10131);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'EnterValidCardDetailsAndClickPayNow')
+data.setCell(4, 2, 'pagetests.HomePageTest')
+data.setCell(4, 3, 6396);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyOrderAmountAfterApplyingCoupon')
+data.setCell(5, 2, 'pagetests.HomePageTest')
+data.setCell(5, 3, 3941);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'VerifyAllPaymentOptionsListedOnPayment')
+data.setCell(6, 2, 'pagetests.HomePageTest')
+data.setCell(6, 3, 2905);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'VerifyUserClickingOnDebitOrCreditCardRedirectsToCardDetailsScreen')
+data.setCell(7, 2, 'pagetests.HomePageTest')
+data.setCell(7, 3, 2858);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'VerifyClickOnCheckout')
+data.setCell(8, 2, 'pagetests.HomePageTest')
+data.setCell(8, 3, 2854);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'VerifyProductDetailsonOrderSummeryPopup')
+data.setCell(9, 2, 'pagetests.HomePageTest')
+data.setCell(9, 3, 2654);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'VerifyPaymentPageFromOrderSummary')
+data.setCell(10, 2, 'pagetests.HomePageTest')
+data.setCell(10, 3, 2295);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'VerifyInputIsEditable')
+data.setCell(11, 2, 'pagetests.HomePageTest')
+data.setCell(11, 3, 1688);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'VerifyInputsAreVisible')
+data.setCell(12, 2, 'pagetests.HomePageTest')
+data.setCell(12, 3, 562);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'VerifyCheckoutPopup')
+data.setCell(13, 2, 'pagetests.HomePageTest')
+data.setCell(13, 3, 410);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'VerifyPillowPrice')
+data.setCell(14, 2, 'pagetests.HomePageTest')
+data.setCell(14, 3, 225);
+window.suiteTableData['Running_tests_on_https___demo_midtrans_com_']= { tableData: data, tableDiv: 'times-div-Running_tests_on_https___demo_midtrans_com_'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Running_tests_on_https___demo_midtrans_com_">
+              </div> <!-- times-div-Running_tests_on_https___demo_midtrans_com_ -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Running_tests_on_https___demo_midtrans_com_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Running tests on https://demo.midtrans.com/</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Running_tests_on_https___demo_midtrans_com_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Running_tests_on_https___demo_midtrans_com_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">pagetests.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">Goto</span>
+                <span class="method-start">9497 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyPillowPrice</span>
+                <span class="method-start">12176 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">Goto</span>
+                <span class="method-start">12431 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyCheckoutPopup</span>
+                <span class="method-start">14443 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">Goto</span>
+                <span class="method-start">14855 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyInputsAreVisible</span>
+                <span class="method-start">16141 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">Goto</span>
+                <span class="method-start">16705 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyInputIsEditable</span>
+                <span class="method-start">19476 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">Goto</span>
+                <span class="method-start">21167 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyClickOnCheckout</span>
+                <span class="method-start">23263 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">Goto</span>
+                <span class="method-start">26121 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyProductDetailsonOrderSummeryPopup</span>
+                <span class="method-start">28210 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">Goto</span>
+                <span class="method-start">30867 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyPaymentPageFromOrderSummary</span>
+                <span class="method-start">32199 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">Goto</span>
+                <span class="method-start">34497 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyAllPaymentOptionsListedOnPayment</span>
+                <span class="method-start">36627 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">Goto</span>
+                <span class="method-start">39534 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyUserClickingOnDebitOrCreditCardRedirectsToCardDetailsScreen</span>
+                <span class="method-start">42517 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">Goto</span>
+                <span class="method-start">45376 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyOrderAmountAfterApplyingCoupon</span>
+                <span class="method-start">47640 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">Goto</span>
+                <span class="method-start">51583 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">EnterValidCardDetailsAndClickPayNow</span>
+                <span class="method-start">54461 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">Goto</span>
+                <span class="method-start">60859 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyClickingOnPaynowRedirectUserToBankPaymentScreen</span>
+                <span class="method-start">64528 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">Goto</span>
+                <span class="method-start">74662 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyClickingOnOKButtonWithValidOTPRedirectToOrderSuccssfullscreen</span>
+                <span class="method-start">77715 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">Goto</span>
+                <span class="method-start">103357 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyClickingOnOKButtonWithInValidOTPRedirectToOrderSuccssfullscreen</span>
+                <span class="method-start">107336 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">Goto</span>
+                <span class="method-start">180793 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen</span>
+                <span class="method-start">185201 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">200019 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

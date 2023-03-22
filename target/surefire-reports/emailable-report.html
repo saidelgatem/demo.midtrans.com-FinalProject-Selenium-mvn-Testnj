@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Running tests on https://demo.midtrans.com/</th></tr>
+<tr><td><a href="#t0">Running regression test</a></td><td class="num">13</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">200,616</td><td>regression</td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Running tests on https://demo.midtrans.com/</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Running regression test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">pagetests.HomePageTest</td><td><a href="#m0">VerifyClickingOnOKButtonWithInValidOTPRedirectToOrderSuccssfullscreen</a></td><td rowspan="1">1679022918484</td><td rowspan="1">73446</td></tr><tr class="failedeven"><td><a href="#m1">VerifyPillowPrice</a></td><td rowspan="1">1679022823324</td><td rowspan="1">225</td></tr><tr><th colspan="4">Running regression test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="13">pagetests.HomePageTest</td><td><a href="#m2">EnterValidCardDetailsAndClickPayNow</a></td><td rowspan="1">1679022865609</td><td rowspan="1">6396</td></tr><tr class="passedeven"><td><a href="#m3">VerifyAllPaymentOptionsListedOnPayment</a></td><td rowspan="1">1679022847775</td><td rowspan="1">2905</td></tr><tr class="passedeven"><td><a href="#m4">VerifyCheckoutPopup</a></td><td rowspan="1">1679022825591</td><td rowspan="1">410</td></tr><tr class="passedeven"><td><a href="#m5">VerifyClickOnCheckout</a></td><td rowspan="1">1679022834411</td><td rowspan="1">2854</td></tr><tr class="passedeven"><td><a href="#m6">VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen</a></td><td rowspan="1">1679022996349</td><td rowspan="1">14817</td></tr><tr class="passedeven"><td><a href="#m7">VerifyClickingOnOKButtonWithValidOTPRedirectToOrderSuccssfullscreen</a></td><td rowspan="1">1679022888863</td><td rowspan="1">25640</td></tr><tr class="passedeven"><td><a href="#m8">VerifyClickingOnPaynowRedirectUserToBankPaymentScreen</a></td><td rowspan="1">1679022875676</td><td rowspan="1">10131</td></tr><tr class="passedeven"><td><a href="#m9">VerifyInputIsEditable</a></td><td rowspan="1">1679022830624</td><td rowspan="1">1688</td></tr><tr class="passedeven"><td><a href="#m10">VerifyInputsAreVisible</a></td><td rowspan="1">1679022827289</td><td rowspan="1">562</td></tr><tr class="passedeven"><td><a href="#m11">VerifyPaymentPageFromOrderSummary</a></td><td rowspan="1">1679022843347</td><td rowspan="1">2295</td></tr><tr class="passedeven"><td><a href="#m12">VerifyProductDetailsonOrderSummeryPopup</a></td><td rowspan="1">1679022839358</td><td rowspan="1">2654</td></tr><tr class="passedeven"><td><a href="#m13">VerifyUserClickingOnDebitOrCreditCardRedirectsToCardDetailsScreen</a></td><td rowspan="1">1679022853665</td><td rowspan="1">2858</td></tr><tr class="passedeven"><td><a href="#m14">verifyOrderAmountAfterApplyingCoupon</a></td><td rowspan="1">1679022858788</td><td rowspan="1">3941</td></tr></tbody>
+</table>
+<h2>Running regression test</h2><h3 id="m0">pagetests.HomePageTest#VerifyClickingOnOKButtonWithInValidOTPRedirectToOrderSuccssfullscreen</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //span[@class=&apos;help-block&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pageobjects.HomePage.containsText(HomePage.java:205)
+	at pageobjects.HomePage.RedirectingToBankPaymentScreen(HomePage.java:195)
+	at pagetests.HomePageTest.VerifyClickingOnOKButtonWithInValidOTPRedirectToOrderSuccssfullscreen(HomePageTest.java:171)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;help-block&apos;]&quot;}
+  (Session info: MicrosoftEdge=110.0.1587.63)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [0d25934a7f05870968736f13cf0f4dfa, findElement {using=xpath, value=//span[@class=&apos;help-block&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 110.0.1587.63, ms:edgeOptions: {debuggerAddress: localhost:61084}, msedge: {msedgedriverVersion: 110.0.1587.63 (b26c9b8fc01e..., userDataDir: C:\Users\trtr\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61084/devtoo..., se:cdpVersion: 110.0.1587.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d25934a7f05870968736f13cf0f4dfa
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 33 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">pagetests.HomePageTest#VerifyPillowPrice</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [20,000] but found [null]
+	at pageobjects.HomePage.amountInShoppingCart(HomePage.java:141)
+	at pagetests.HomePageTest.VerifyPillowPrice(HomePageTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">pagetests.HomePageTest#EnterValidCardDetailsAndClickPayNow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">pagetests.HomePageTest#VerifyAllPaymentOptionsListedOnPayment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">pagetests.HomePageTest#VerifyCheckoutPopup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">pagetests.HomePageTest#VerifyClickOnCheckout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">pagetests.HomePageTest#VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">pagetests.HomePageTest#VerifyClickingOnOKButtonWithValidOTPRedirectToOrderSuccssfullscreen</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">pagetests.HomePageTest#VerifyClickingOnPaynowRedirectUserToBankPaymentScreen</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">pagetests.HomePageTest#VerifyInputIsEditable</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">pagetests.HomePageTest#VerifyInputsAreVisible</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">pagetests.HomePageTest#VerifyPaymentPageFromOrderSummary</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">pagetests.HomePageTest#VerifyProductDetailsonOrderSummeryPopup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">pagetests.HomePageTest#VerifyUserClickingOnDebitOrCreditCardRedirectsToCardDetailsScreen</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">pagetests.HomePageTest#verifyOrderAmountAfterApplyingCoupon</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
