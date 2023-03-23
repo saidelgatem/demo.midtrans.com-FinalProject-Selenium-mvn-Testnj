@@ -8,7 +8,7 @@
 - Framework: TestNG
 
 ## Prerequisite:
-1. Need to install jdk 11 and configure it into Environment variable
+1. Need to install jdk 19 and configure it into Environment variable
 2. Download maven and configure it into Environment variable also
 
 ## Run the automation script:
