@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="15" passed="13" failed="2" skipped="0">
+<testng-results ignored="0" total="15" passed="14" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-16T23:13:31 EDT" name="Running tests on https://demo.midtrans.com/" finished-at="2023-03-16T23:16:51 EDT" duration-ms="200616">
+  <suite started-at="2023-03-22T20:40:11 EDT" name="Running tests on https://demo.midtrans.com/" finished-at="2023-03-22T20:44:23 EDT" duration-ms="252180">
     <groups>
       <group name="regression">
         <method signature="HomePageTest.VerifyPillowPrice()[pri:1, instance:pagetests.HomePageTest@62150f9e]" name="VerifyPillowPrice" class="pagetests.HomePageTest"/>
@@ -30,168 +30,129 @@
         <method signature="HomePageTest.VerifyClickingOnOKButtonWithValidOTPRedirectToOrderSuccssfullscreen()[pri:13, instance:pagetests.HomePageTest@62150f9e]" name="VerifyClickingOnOKButtonWithValidOTPRedirectToOrderSuccssfullscreen" class="pagetests.HomePageTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-03-16T23:13:31 EDT" name="Running regression test" finished-at="2023-03-16T23:16:51 EDT" duration-ms="200616">
+    <test started-at="2023-03-22T20:40:11 EDT" name="Running regression test" finished-at="2023-03-22T20:44:23 EDT" duration-ms="252180">
       <class name="pagetests.HomePageTest">
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:13:31 EDT" name="tearUp" finished-at="2023-03-16T23:13:40 EDT" duration-ms="9469" status="PASS">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:40:11 EDT" name="tearUp" finished-at="2023-03-22T20:40:28 EDT" duration-ms="16440" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->
-        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:13:40 EDT" name="Goto" finished-at="2023-03-16T23:13:43 EDT" duration-ms="2677" status="PASS">
+        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:40:28 EDT" name="Goto" finished-at="2023-03-22T20:40:29 EDT" duration-ms="1171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Goto -->
-        <test-method signature="VerifyPillowPrice()[pri:1, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:13:43 EDT" name="VerifyPillowPrice" finished-at="2023-03-16T23:13:43 EDT" duration-ms="225" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [20,000] but found [null]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [20,000] but found [null]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at pageobjects.HomePage.amountInShoppingCart(HomePage.java:141)
-at pagetests.HomePageTest.VerifyPillowPrice(HomePageTest.java:45)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="VerifyPillowPrice()[pri:1, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:40:29 EDT" name="VerifyPillowPrice" finished-at="2023-03-22T20:40:29 EDT" duration-ms="219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyPillowPrice -->
-        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:13:43 EDT" name="Goto" finished-at="2023-03-16T23:13:45 EDT" duration-ms="2011" status="PASS">
+        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:40:29 EDT" name="Goto" finished-at="2023-03-22T20:40:32 EDT" duration-ms="2863" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Goto -->
-        <test-method signature="VerifyCheckoutPopup()[pri:2, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:13:45 EDT" name="VerifyCheckoutPopup" finished-at="2023-03-16T23:13:46 EDT" duration-ms="410" status="PASS">
+        <test-method signature="VerifyCheckoutPopup()[pri:2, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:40:32 EDT" name="VerifyCheckoutPopup" finished-at="2023-03-22T20:40:32 EDT" duration-ms="245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCheckoutPopup -->
-        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:13:46 EDT" name="Goto" finished-at="2023-03-16T23:13:47 EDT" duration-ms="1285" status="PASS">
+        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:40:32 EDT" name="Goto" finished-at="2023-03-22T20:40:34 EDT" duration-ms="1957" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Goto -->
-        <test-method signature="VerifyInputsAreVisible()[pri:3, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:13:47 EDT" name="VerifyInputsAreVisible" finished-at="2023-03-16T23:13:47 EDT" duration-ms="562" status="PASS">
+        <test-method signature="VerifyInputsAreVisible()[pri:3, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:40:34 EDT" name="VerifyInputsAreVisible" finished-at="2023-03-22T20:40:35 EDT" duration-ms="863" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyInputsAreVisible -->
-        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:13:47 EDT" name="Goto" finished-at="2023-03-16T23:13:50 EDT" duration-ms="2771" status="PASS">
+        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:40:35 EDT" name="Goto" finished-at="2023-03-22T20:40:37 EDT" duration-ms="2402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Goto -->
-        <test-method signature="VerifyInputIsEditable()[pri:4, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:13:50 EDT" name="VerifyInputIsEditable" finished-at="2023-03-16T23:13:52 EDT" duration-ms="1688" status="PASS">
+        <test-method signature="VerifyInputIsEditable()[pri:4, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:40:37 EDT" name="VerifyInputIsEditable" finished-at="2023-03-22T20:40:41 EDT" duration-ms="3389" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyInputIsEditable -->
-        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:13:52 EDT" name="Goto" finished-at="2023-03-16T23:13:54 EDT" duration-ms="2096" status="PASS">
+        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:40:41 EDT" name="Goto" finished-at="2023-03-22T20:40:45 EDT" duration-ms="3947" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Goto -->
-        <test-method signature="VerifyClickOnCheckout()[pri:5, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:13:54 EDT" name="VerifyClickOnCheckout" finished-at="2023-03-16T23:13:57 EDT" duration-ms="2854" status="PASS">
+        <test-method signature="VerifyClickOnCheckout()[pri:5, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:40:45 EDT" name="VerifyClickOnCheckout" finished-at="2023-03-22T20:40:48 EDT" duration-ms="3384" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyClickOnCheckout -->
-        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:13:57 EDT" name="Goto" finished-at="2023-03-16T23:13:59 EDT" duration-ms="2089" status="PASS">
+        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:40:48 EDT" name="Goto" finished-at="2023-03-22T20:40:50 EDT" duration-ms="2002" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Goto -->
-        <test-method signature="VerifyProductDetailsonOrderSummeryPopup()[pri:6, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:13:59 EDT" name="VerifyProductDetailsonOrderSummeryPopup" finished-at="2023-03-16T23:14:02 EDT" duration-ms="2654" status="PASS">
+        <test-method signature="VerifyProductDetailsonOrderSummeryPopup()[pri:6, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:40:50 EDT" name="VerifyProductDetailsonOrderSummeryPopup" finished-at="2023-03-22T20:40:53 EDT" duration-ms="2705" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyProductDetailsonOrderSummeryPopup -->
-        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:14:02 EDT" name="Goto" finished-at="2023-03-16T23:14:03 EDT" duration-ms="1332" status="PASS">
+        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:40:53 EDT" name="Goto" finished-at="2023-03-22T20:40:54 EDT" duration-ms="1257" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Goto -->
-        <test-method signature="VerifyPaymentPageFromOrderSummary()[pri:7, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:14:03 EDT" name="VerifyPaymentPageFromOrderSummary" finished-at="2023-03-16T23:14:05 EDT" duration-ms="2295" status="PASS">
+        <test-method signature="VerifyPaymentPageFromOrderSummary()[pri:7, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:40:54 EDT" name="VerifyPaymentPageFromOrderSummary" finished-at="2023-03-22T20:40:59 EDT" duration-ms="4496" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyPaymentPageFromOrderSummary -->
-        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:14:05 EDT" name="Goto" finished-at="2023-03-16T23:14:07 EDT" duration-ms="2129" status="PASS">
+        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:40:59 EDT" name="Goto" finished-at="2023-03-22T20:41:01 EDT" duration-ms="2617" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Goto -->
-        <test-method signature="VerifyAllPaymentOptionsListedOnPayment()[pri:8, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:14:07 EDT" name="VerifyAllPaymentOptionsListedOnPayment" finished-at="2023-03-16T23:14:10 EDT" duration-ms="2905" status="PASS">
+        <test-method signature="VerifyAllPaymentOptionsListedOnPayment()[pri:8, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:41:01 EDT" name="VerifyAllPaymentOptionsListedOnPayment" finished-at="2023-03-22T20:41:06 EDT" duration-ms="4995" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAllPaymentOptionsListedOnPayment -->
-        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:14:10 EDT" name="Goto" finished-at="2023-03-16T23:14:13 EDT" duration-ms="2983" status="PASS">
+        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:41:06 EDT" name="Goto" finished-at="2023-03-22T20:41:10 EDT" duration-ms="3806" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Goto -->
-        <test-method signature="VerifyUserClickingOnDebitOrCreditCardRedirectsToCardDetailsScreen()[pri:9, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:14:13 EDT" name="VerifyUserClickingOnDebitOrCreditCardRedirectsToCardDetailsScreen" finished-at="2023-03-16T23:14:16 EDT" duration-ms="2858" status="PASS">
+        <test-method signature="VerifyUserClickingOnDebitOrCreditCardRedirectsToCardDetailsScreen()[pri:9, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:41:10 EDT" name="VerifyUserClickingOnDebitOrCreditCardRedirectsToCardDetailsScreen" finished-at="2023-03-22T20:41:15 EDT" duration-ms="4551" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyUserClickingOnDebitOrCreditCardRedirectsToCardDetailsScreen -->
-        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:14:16 EDT" name="Goto" finished-at="2023-03-16T23:14:18 EDT" duration-ms="2264" status="PASS">
+        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:41:15 EDT" name="Goto" finished-at="2023-03-22T20:41:17 EDT" duration-ms="1995" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Goto -->
-        <test-method signature="verifyOrderAmountAfterApplyingCoupon()[pri:10, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:14:18 EDT" name="verifyOrderAmountAfterApplyingCoupon" finished-at="2023-03-16T23:14:22 EDT" duration-ms="3941" status="PASS">
+        <test-method signature="verifyOrderAmountAfterApplyingCoupon()[pri:10, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:41:17 EDT" name="verifyOrderAmountAfterApplyingCoupon" finished-at="2023-03-22T20:41:22 EDT" duration-ms="5022" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOrderAmountAfterApplyingCoupon -->
-        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:14:22 EDT" name="Goto" finished-at="2023-03-16T23:14:25 EDT" duration-ms="2878" status="PASS">
+        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:41:22 EDT" name="Goto" finished-at="2023-03-22T20:41:25 EDT" duration-ms="3798" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Goto -->
-        <test-method signature="EnterValidCardDetailsAndClickPayNow()[pri:11, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:14:25 EDT" name="EnterValidCardDetailsAndClickPayNow" finished-at="2023-03-16T23:14:32 EDT" duration-ms="6396" status="PASS">
+        <test-method signature="EnterValidCardDetailsAndClickPayNow()[pri:11, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:41:25 EDT" name="EnterValidCardDetailsAndClickPayNow" finished-at="2023-03-22T20:41:32 EDT" duration-ms="6357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnterValidCardDetailsAndClickPayNow -->
-        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:14:32 EDT" name="Goto" finished-at="2023-03-16T23:14:35 EDT" duration-ms="3669" status="PASS">
+        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:41:32 EDT" name="Goto" finished-at="2023-03-22T20:41:35 EDT" duration-ms="3618" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Goto -->
-        <test-method signature="VerifyClickingOnPaynowRedirectUserToBankPaymentScreen()[pri:12, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:14:35 EDT" name="VerifyClickingOnPaynowRedirectUserToBankPaymentScreen" finished-at="2023-03-16T23:14:45 EDT" duration-ms="10131" status="PASS">
+        <test-method signature="VerifyClickingOnPaynowRedirectUserToBankPaymentScreen()[pri:12, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:41:35 EDT" name="VerifyClickingOnPaynowRedirectUserToBankPaymentScreen" finished-at="2023-03-22T20:41:57 EDT" duration-ms="21536" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyClickingOnPaynowRedirectUserToBankPaymentScreen -->
-        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:14:45 EDT" name="Goto" finished-at="2023-03-16T23:14:48 EDT" duration-ms="3053" status="PASS">
+        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:41:57 EDT" name="Goto" finished-at="2023-03-22T20:42:01 EDT" duration-ms="3831" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Goto -->
-        <test-method signature="VerifyClickingOnOKButtonWithValidOTPRedirectToOrderSuccssfullscreen()[pri:13, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:14:48 EDT" name="VerifyClickingOnOKButtonWithValidOTPRedirectToOrderSuccssfullscreen" finished-at="2023-03-16T23:15:14 EDT" duration-ms="25640" status="PASS">
+        <test-method signature="VerifyClickingOnOKButtonWithValidOTPRedirectToOrderSuccssfullscreen()[pri:13, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:42:01 EDT" name="VerifyClickingOnOKButtonWithValidOTPRedirectToOrderSuccssfullscreen" finished-at="2023-03-22T20:42:25 EDT" duration-ms="23937" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyClickingOnOKButtonWithValidOTPRedirectToOrderSuccssfullscreen -->
-        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:15:14 EDT" name="Goto" finished-at="2023-03-16T23:15:18 EDT" duration-ms="3978" status="PASS">
+        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:42:25 EDT" name="Goto" finished-at="2023-03-22T20:42:28 EDT" duration-ms="3597" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Goto -->
-        <test-method signature="VerifyClickingOnOKButtonWithInValidOTPRedirectToOrderSuccssfullscreen()[pri:14, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:15:18 EDT" name="VerifyClickingOnOKButtonWithInValidOTPRedirectToOrderSuccssfullscreen" finished-at="2023-03-16T23:16:31 EDT" duration-ms="73446" status="FAIL">
+        <test-method signature="VerifyClickingOnOKButtonWithInValidOTPRedirectToOrderSuccssfullscreen()[pri:14, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:42:28 EDT" name="VerifyClickingOnOKButtonWithInValidOTPRedirectToOrderSuccssfullscreen" finished-at="2023-03-22T20:42:55 EDT" duration-ms="26339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyClickingOnOKButtonWithInValidOTPRedirectToOrderSuccssfullscreen -->
+        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:42:55 EDT" name="Goto" finished-at="2023-03-22T20:42:58 EDT" duration-ms="3550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Goto -->
+        <test-method signature="VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen()[pri:15, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:42:58 EDT" name="VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen" finished-at="2023-03-22T20:44:22 EDT" duration-ms="84229" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[@class='help-block']' (tried for 10 second(s) with 500 milliseconds interval)]]>
@@ -200,9 +161,9 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[@class='help-block']' (tried for 10 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at pageobjects.HomePage.containsText(HomePage.java:205)
-at pageobjects.HomePage.RedirectingToBankPaymentScreen(HomePage.java:195)
-at pagetests.HomePageTest.VerifyClickingOnOKButtonWithInValidOTPRedirectToOrderSuccssfullscreen(HomePageTest.java:171)
+at pageobjects.HomePage.containsText(HomePage.java:251)
+at pageobjects.HomePage.RedirectUserToBankPayment(HomePage.java:218)
+at pagetests.HomePageTest.VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen(HomePageTest.java:159)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -239,9 +200,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.8.1', revision: '8ebccac989'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0d25934a7f05870968736f13cf0f4dfa, findElement {using=xpath, value=//span[@class='help-block']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 110.0.1587.63, ms:edgeOptions: {debuggerAddress: localhost:61084}, msedge: {msedgedriverVersion: 110.0.1587.63 (b26c9b8fc01e..., userDataDir: C:\Users\trtr\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61084/devtoo..., se:cdpVersion: 110.0.1587.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0d25934a7f05870968736f13cf0f4dfa
+Command: [66283dec277a8be260fe5873a187d342, findElement {using=xpath, value=//span[@class='help-block']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 110.0.1587.63, ms:edgeOptions: {debuggerAddress: localhost:62462}, msedge: {msedgedriverVersion: 110.0.1587.63 (b26c9b8fc01e..., userDataDir: C:\Users\trtr\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62462/devtoo..., se:cdpVersion: 110.0.1587.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 66283dec277a8be260fe5873a187d342
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -270,16 +231,8 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyClickingOnOKButtonWithInValidOTPRedirectToOrderSuccssfullscreen -->
-        <test-method is-config="true" signature="Goto()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:16:31 EDT" name="Goto" finished-at="2023-03-16T23:16:36 EDT" duration-ms="4408" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Goto -->
-        <test-method signature="VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen()[pri:15, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:16:36 EDT" name="VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen" finished-at="2023-03-16T23:16:51 EDT" duration-ms="14817" status="PASS">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-16T23:16:51 EDT" name="tearDown" finished-at="2023-03-16T23:16:51 EDT" duration-ms="543" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pagetests.HomePageTest@62150f9e]" started-at="2023-03-22T20:44:22 EDT" name="tearDown" finished-at="2023-03-22T20:44:23 EDT" duration-ms="912" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

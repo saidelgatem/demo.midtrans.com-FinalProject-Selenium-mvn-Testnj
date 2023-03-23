@@ -13,7 +13,6 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class HomePageTest extends SetupDriver {
-    //public HomePage homePage;
     public static Properties prop = new Properties();
 
     public HomePageTest(WebDriver driver){
@@ -34,7 +33,6 @@ public class HomePageTest extends SetupDriver {
     // TC_01 - Verify "Midtrans Pillow" has added into cart with cost of 20000/- Regression
     @Test(testName = "Test Case 1", priority = 1, groups = {"regression"})
     void VerifyPillowPrice(){
-        //homePage = new HomePage(driver);
         homePage.ClickOnBuyNowButton();
         homePage.amountInShoppingCart();
     }

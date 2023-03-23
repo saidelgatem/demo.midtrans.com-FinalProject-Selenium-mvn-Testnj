@@ -10,10 +10,9 @@
     <classes>
       <class name="pagetests.HomePageTest">
         <methods>
-          <include name="VerifyPillowPrice"/>
+          <include name="VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen"/>
           <include name="tearDown"/>
           <include name="tearUp"/>
-          <include name="VerifyClickingOnOKButtonWithInValidOTPRedirectToOrderSuccssfullscreen"/>
           <include name="Goto"/>
         </methods>
       </class> <!-- pagetests.HomePageTest -->

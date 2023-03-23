@@ -18,9 +18,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class HomePage {
     public WebDriver driver;
     public WebDriverWait wait;
-
-    //public static Properties prop = new Properties();
-    //Constructor that will be automatically called as soon as the object of the class is created
     public HomePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -116,13 +113,6 @@ public class HomePage {
         Util.holdExecution(1);
         CartCheckoutButton.click();
     }
-    public void ClickOnCancelCheckoutButton(){CancelCheckoutButton.click();}
-    //Dispalyed Methods
-    public boolean VerifyBuyNowButtonIsDisplayed(){return BuyNowButton.isDisplayed();}
-    public boolean VerifyCarPopupIsDisplayed(){return CartPopup.isDisplayed();}
-
-    public boolean VerifyCarCheckoutButtonIsDisplayed(){return CartCheckoutButton.isDisplayed();}
-    public boolean VerifyPaymentMethodIsDisplayed(){return PaymentMethod.isDisplayed();}
     public boolean VerifyCardDetailsScreenIsDisplayed(){return CardDetailsScreen.isDisplayed();}
 
     public void clickClearAndType(WebElement webElement, String text) {
@@ -180,8 +170,10 @@ public class HomePage {
     // Test 08
     public void VerifyPaymentList(){
         driver.switchTo().frame(iFrame1);
-        String[] expected = {prop.getProperty("payment.list")};
+        //String[] expected = {prop.getProperty("payment.list")};
+        String[] expected = {"GoPay","Bank transfer", "Credit/debit card",  "ShopeePay", "QRIS", "Alfa Group","Indomaret","Akulaku PayLater","Kredivo", "UOB EZ Pay","BCA KlikPay", "OCTO Clicks","BRImo", "Danamon Online Banking","klikBCA"};
         // assert that the number of found <option> elements matches the expectations
+        System.out.println("Expected : "+expected.length+" Actual Payment size"+PaymentOptions.size());
         Assert.assertEquals(expected.length, PaymentOptions.size());
         // assert that the value of every <option> element equals the expected value
         for (int i = 0; i < PaymentOptions.size(); i++) {
@@ -219,7 +211,7 @@ public class HomePage {
     }
     // Test 12
     public void RedirectUserToBankPayment() throws InterruptedException {
-        //Thread.sleep(5000);
+        Thread.sleep(5000);
         wait = new WebDriverWait(driver,Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOf(iFrame2));
         driver.switchTo().frame(iFrame2);
@@ -227,6 +219,29 @@ public class HomePage {
         assertText(MerchantName, prop.getProperty("merchant.name"));
         assertText(FinalAmount, prop.getProperty("final.amount"));
         assertText(CardNumber, prop.getProperty("payment.card.number"));
+    }
+    // Test 13
+    public void ValidOTP() throws InterruptedException {
+        clickClearAndType(Otp,prop.getProperty("otp"));
+        OkButtonOtp.click();
+        Thread.sleep(5000);
+        explicitWait().until(ExpectedConditions.visibilityOf(PurchaseSuccessful));
+
+    }
+    // Test 14
+    public void InvalidOTP() {
+        clickClearAndType(Otp,prop.getProperty("invalid.otp"));
+        OkButtonOtp.click();
+        driver.switchTo().parentFrame();
+        assertText(PurchaseUnSuccessful, "Card declined by bank");
+
+    }
+    // Test 15
+    public void CancelPurchase() {
+        AbortAuthentication.click();
+        driver.switchTo().parentFrame();
+        assertText(DeclinedMessage, "Card declined by bank");
+
     }
     public void assertText(WebElement webElement, String expectedText) {
         explicitWait().until(ExpectedConditions.visibilityOf(webElement));
@@ -238,27 +253,4 @@ public class HomePage {
             assert true;
         }
     }
-    public void ValidOTP() throws InterruptedException {
-        clickClearAndType(Otp,prop.getProperty("otp"));
-        OkButtonOtp.click();
-        Thread.sleep(5000);
-        explicitWait().until(ExpectedConditions.visibilityOf(PurchaseSuccessful));
-
-    }
-
-    public void InvalidOTP() {
-        clickClearAndType(Otp,prop.getProperty("invalid.otp"));
-        OkButtonOtp.click();
-        driver.switchTo().parentFrame();
-        assertText(PurchaseUnSuccessful, "Card declined by bank");
-
-    }
-
-    public void CancelPurchase() {
-        AbortAuthentication.click();
-        driver.switchTo().parentFrame();
-        assertText(DeclinedMessage, "Card declined by bank");
-
-    }
-
 }
