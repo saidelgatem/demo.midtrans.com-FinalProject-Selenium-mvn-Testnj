@@ -32,4 +32,4 @@ mvn clean test
 ```sh
 ```
 ## Test run report
-![image](https://user-images.githubusercontent.com/28926103/218331820-8b180bc3-86ae-4223-aa44-5e55cdaf3be6.png)
+![image](https://github.com/saidelgatem/demo.midtrans.com-FinalProject-Selenium-mvn-Testnj/blob/Project1/target/surefire-reports/IntelIJ%20Repport.png)
