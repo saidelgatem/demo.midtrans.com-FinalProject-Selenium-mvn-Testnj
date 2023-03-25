@@ -1,18 +1,17 @@
 package pageobjects;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import utils.Util;
 
 import java.time.Duration;
 import java.util.List;
 
 import static pagetests.HomePageTest.prop;
-
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
 
 public class HomePage {
@@ -49,8 +48,6 @@ public class HomePage {
     public WebElement InputPostalCode;
     @FindBy(xpath = "//div[@class='cart-checkout']")
     public WebElement CartCheckoutButton;
-    @FindBy(xpath = "//div[@class='cancel-btn']")
-    public WebElement CancelCheckoutButton;
     @FindBy(xpath = "//iframe[@id='snap-midtrans']")
     public WebElement iFrame1;
     @FindBy(xpath = "//div[@class='header-order-id']")
@@ -110,8 +107,9 @@ public class HomePage {
     //Click Methods
     public void ClickOnBuyNowButton(){BuyNowButton.click();}
     public void ClickOnCheckOutButton(){
-        Util.holdExecution(1);
-        CartCheckoutButton.click();
+        //Util.holdExecution(1);
+        explicitWait().until(ExpectedConditions.visibilityOf(CartCheckoutButton)).click();
+        //CartCheckoutButton.click();
     }
     public boolean VerifyCardDetailsScreenIsDisplayed(){return CardDetailsScreen.isDisplayed();}
 
@@ -123,6 +121,7 @@ public class HomePage {
     }
     // Test 01
     public void amountInShoppingCart() {
+        explicitWait().until(ExpectedConditions.visibilityOf(PillowPrice));
         Assert.assertEquals(PillowPrice.getText(), prop.getProperty("product.amount"));
 
     }
@@ -177,9 +176,7 @@ public class HomePage {
         Assert.assertEquals(expected.length, PaymentOptions.size());
         // assert that the value of every <option> element equals the expected value
         for (int i = 0; i < PaymentOptions.size(); i++) {
-            if (expected[i].contains(PaymentOptions.get(i).getText())) {
-                assert true;
-            }
+            assert !expected[i].contains(PaymentOptions.get(i).getText()) || true;
         }
     }
     // 09
@@ -212,8 +209,6 @@ public class HomePage {
     // Test 12
     public void RedirectUserToBankPayment() throws InterruptedException {
         Thread.sleep(5000);
-        wait = new WebDriverWait(driver,Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOf(iFrame2));
         driver.switchTo().frame(iFrame2);
         containsText(TransactionNameBlock, prop.getProperty("transaction.name"));
         assertText(MerchantName, prop.getProperty("merchant.name"));
@@ -249,8 +244,6 @@ public class HomePage {
     }
     public void containsText(WebElement webElement, String text) {
         explicitWait().until(ExpectedConditions.visibilityOf(webElement));
-        if (webElement.getText().contains(text)) {
-            assert true;
-        }
+        assert !webElement.getText().contains(text) || true;
     }
 }

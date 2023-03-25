@@ -1,6 +1,8 @@
 package setup;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -11,14 +13,13 @@ import org.testng.annotations.BeforeMethod;
 import pageobjects.HomePage;
 import pagetests.HomePageTest;
 
-import java.io.File;
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
+
 import static pagetests.HomePageTest.prop;
 
 public class SetupDriver {
     public WebDriver driver;
-    public WebDriverWait wait;
+    public static WebDriverWait wait;
     public HomePage homePage;
     public HomePageTest homePageTest;
 
@@ -37,7 +38,6 @@ public class SetupDriver {
     @BeforeMethod(alwaysRun = true)
     public void Goto(){
         driver.get(prop.getProperty("url"));
-//        homePage = new HomePage(driver);
     }
 
     @AfterClass(alwaysRun = true)
@@ -47,24 +47,28 @@ public class SetupDriver {
     }
 
     public static WebDriver launchBrowser(String browserName){
-        WebDriver driver;
-        if(browserName.equalsIgnoreCase("chrome")){
-            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+ File.separator+"resources"+File.separator+"drivers"+File.separator+"chromedriver.exe");
-            driver = new ChromeDriver();
-        }else if (browserName.equalsIgnoreCase("firefox")) {
-            System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + File.separator + "resources" + File.separator + "drivers" + File.separator + "geckodriver.exe");
-            driver = new FirefoxDriver();
-        }else if (browserName.equalsIgnoreCase("safari")){
-            driver = new SafariDriver();
-        }else if (browserName.equalsIgnoreCase("edge")){
-            System.setProperty("webdriver.edge.driver", System.getProperty("user.dir")+File.separator+"resources"+File.separator+"drivers"+File.separator+"msedgedriver.exe");
+        // i add this option to avoid this error :
+        // Java.io.IOException: Invalid Status code=403 text=Forbidden
+        ChromeOptions option = new ChromeOptions();
+        option.addArguments("--remote-allow-origins=*");
+        // and i add option between brackets for chrome
+        WebDriver driver = null;
+        if (browserName.equalsIgnoreCase("chrome")) {
+            driver = new ChromeDriver(option);
+        } else if (browserName.equalsIgnoreCase("edge")) {
             driver = new EdgeDriver();
-        }else {
-            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+ File.separator+"resources"+File.separator+"drivers"+File.separator+"chromedriver.exe");
-            driver = new ChromeDriver();
+        } else if (browserName.equalsIgnoreCase("firefox")) {
+            driver = new FirefoxDriver();
+        } else if (browserName.equalsIgnoreCase("safari")) {
+            driver = new SafariDriver();
+        } else {
+            System.out.println("Browser name is incorrect");
+            System.exit(1);
         }
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         return driver;
     }
+
 }

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Running_tests_on_https___demo_midtrans_com_" class="navigator-link">
-              <span class="suite-name border-failed">Running tests on https://demo.midtrans.com/</span>
+              <span class="suite-name border-passed">Running tests on https://demo.midtrans.com/</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">15 methods, 1 failed,   14 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Running_tests_on_https___demo_midtrans_com_" class="hide-methods failed suite-Running_tests_on_https___demo_midtrans_com_"> (hide)</a> <!-- hide-methods failed suite-Running_tests_on_https___demo_midtrans_com_ -->
-                      <a href="#" panel-name="suite-Running_tests_on_https___demo_midtrans_com_" class="show-methods failed suite-Running_tests_on_https___demo_midtrans_com_"> (show)</a> <!-- show-methods failed suite-Running_tests_on_https___demo_midtrans_com_ -->
-                    </span>
-                    <div class="method-list-content failed suite-Running_tests_on_https___demo_midtrans_com_">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Running_tests_on_https___demo_midtrans_com_" title="pagetests.HomePageTest" class="method navigator-link" hash-for-method="VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen">VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Running_tests_on_https___demo_midtrans_com_ -->
+                    <span class="method-stats">15 methods,   15 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -133,6 +119,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Running_tests_on_https___demo_midtrans_com_" title="pagetests.HomePageTest" class="method navigator-link" hash-for-method="VerifyClickOnCheckout">VerifyClickOnCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Running_tests_on_https___demo_midtrans_com_" title="pagetests.HomePageTest" class="method navigator-link" hash-for-method="VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen">VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -197,59 +188,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Running_tests_on_https___demo_midtrans_com_" class="panel Running_tests_on_https___demo_midtrans_com_">
-          <div class="suite-Running_tests_on_https___demo_midtrans_com_-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">pagetests.HomePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen">
-                  </a> <!-- VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen -->
-                  <span class="method-name">VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //span[@class=&apos;help-block&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at pageobjects.HomePage.containsText(HomePage.java:251)
-	at pageobjects.HomePage.RedirectUserToBankPayment(HomePage.java:218)
-	at pagetests.HomePageTest.VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen(HomePageTest.java:159)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;help-block&apos;]&quot;}
-  (Session info: MicrosoftEdge=110.0.1587.63)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [66283dec277a8be260fe5873a187d342, findElement {using=xpath, value=//span[@class=&apos;help-block&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 110.0.1587.63, ms:edgeOptions: {debuggerAddress: localhost:62462}, msedge: {msedgedriverVersion: 110.0.1587.63 (b26c9b8fc01e..., userDataDir: C:\Users\trtr\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62462/devtoo..., se:cdpVersion: 110.0.1587.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 66283dec277a8be260fe5873a187d342
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 33 more
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Running_tests_on_https___demo_midtrans_com_-class-failed -->
           <div class="suite-Running_tests_on_https___demo_midtrans_com_-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -282,6 +220,13 @@ Session ID: 66283dec277a8be260fe5873a187d342
                   <a name="VerifyClickOnCheckout">
                   </a> <!-- VerifyClickOnCheckout -->
                   <span class="method-name">VerifyClickOnCheckout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen">
+                  </a> <!-- VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen -->
+                  <span class="method-name">VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -507,70 +452,70 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(15);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen')
+data.setCell(0, 1, 'VerifyClickingOnOKButtonWithValidOTPRedirectToOrderSuccssfullscreen')
 data.setCell(0, 2, 'pagetests.HomePageTest')
-data.setCell(0, 3, 84229);
+data.setCell(0, 3, 22566);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'VerifyClickingOnOKButtonWithInValidOTPRedirectToOrderSuccssfullscreen')
+data.setCell(1, 1, 'VerifyClickingOnPaynowRedirectUserToBankPaymentScreen')
 data.setCell(1, 2, 'pagetests.HomePageTest')
-data.setCell(1, 3, 26339);
+data.setCell(1, 3, 21987);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'VerifyClickingOnOKButtonWithValidOTPRedirectToOrderSuccssfullscreen')
+data.setCell(2, 1, 'VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen')
 data.setCell(2, 2, 'pagetests.HomePageTest')
-data.setCell(2, 3, 23937);
+data.setCell(2, 3, 17407);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'VerifyClickingOnPaynowRedirectUserToBankPaymentScreen')
+data.setCell(3, 1, 'VerifyClickingOnOKButtonWithInValidOTPRedirectToOrderSuccssfullscreen')
 data.setCell(3, 2, 'pagetests.HomePageTest')
-data.setCell(3, 3, 21536);
+data.setCell(3, 3, 16377);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'EnterValidCardDetailsAndClickPayNow')
+data.setCell(4, 1, 'verifyOrderAmountAfterApplyingCoupon')
 data.setCell(4, 2, 'pagetests.HomePageTest')
-data.setCell(4, 3, 6357);
+data.setCell(4, 3, 7540);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyOrderAmountAfterApplyingCoupon')
+data.setCell(5, 1, 'EnterValidCardDetailsAndClickPayNow')
 data.setCell(5, 2, 'pagetests.HomePageTest')
-data.setCell(5, 3, 5022);
+data.setCell(5, 3, 6798);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'VerifyAllPaymentOptionsListedOnPayment')
+data.setCell(6, 1, 'VerifyUserClickingOnDebitOrCreditCardRedirectsToCardDetailsScreen')
 data.setCell(6, 2, 'pagetests.HomePageTest')
-data.setCell(6, 3, 4995);
+data.setCell(6, 3, 6051);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'VerifyUserClickingOnDebitOrCreditCardRedirectsToCardDetailsScreen')
+data.setCell(7, 1, 'VerifyInputIsEditable')
 data.setCell(7, 2, 'pagetests.HomePageTest')
-data.setCell(7, 3, 4551);
+data.setCell(7, 3, 5127);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'VerifyPaymentPageFromOrderSummary')
 data.setCell(8, 2, 'pagetests.HomePageTest')
-data.setCell(8, 3, 4496);
+data.setCell(8, 3, 3648);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'VerifyInputIsEditable')
+data.setCell(9, 1, 'VerifyAllPaymentOptionsListedOnPayment')
 data.setCell(9, 2, 'pagetests.HomePageTest')
-data.setCell(9, 3, 3389);
+data.setCell(9, 3, 3002);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'VerifyClickOnCheckout')
 data.setCell(10, 2, 'pagetests.HomePageTest')
-data.setCell(10, 3, 3384);
+data.setCell(10, 3, 2521);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'VerifyProductDetailsonOrderSummeryPopup')
 data.setCell(11, 2, 'pagetests.HomePageTest')
-data.setCell(11, 3, 2705);
+data.setCell(11, 3, 2476);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'VerifyInputsAreVisible')
 data.setCell(12, 2, 'pagetests.HomePageTest')
-data.setCell(12, 3, 863);
+data.setCell(12, 3, 907);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'VerifyCheckoutPopup')
 data.setCell(13, 2, 'pagetests.HomePageTest')
-data.setCell(13, 3, 245);
+data.setCell(13, 3, 721);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'VerifyPillowPrice')
 data.setCell(14, 2, 'pagetests.HomePageTest')
-data.setCell(14, 3, 219);
+data.setCell(14, 3, 657);
 window.suiteTableData['Running_tests_on_https___demo_midtrans_com_']= { tableData: data, tableDiv: 'times-div-Running_tests_on_https___demo_midtrans_com_'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Running_tests_on_https___demo_midtrans_com_">
               </div> <!-- times-div-Running_tests_on_https___demo_midtrans_com_ -->
             </div> <!-- times-div -->
@@ -603,129 +548,127 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">Goto</span>
-                <span class="method-start">16470 ms</span>
+                <span class="method-start">18132 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyPillowPrice</span>
-                <span class="method-start">17643 ms</span>
+                <span class="method-start">19695 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Goto</span>
-                <span class="method-start">17878 ms</span>
+                <span class="method-start">20377 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyCheckoutPopup</span>
-                <span class="method-start">20741 ms</span>
+                <span class="method-start">22801 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Goto</span>
-                <span class="method-start">20988 ms</span>
+                <span class="method-start">23525 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyInputsAreVisible</span>
-                <span class="method-start">22945 ms</span>
+                <span class="method-start">26565 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Goto</span>
-                <span class="method-start">23811 ms</span>
+                <span class="method-start">27475 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyInputIsEditable</span>
-                <span class="method-start">26213 ms</span>
+                <span class="method-start">29746 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Goto</span>
-                <span class="method-start">29605 ms</span>
+                <span class="method-start">34876 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyClickOnCheckout</span>
-                <span class="method-start">33552 ms</span>
+                <span class="method-start">38093 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Goto</span>
-                <span class="method-start">36941 ms</span>
+                <span class="method-start">40618 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyProductDetailsonOrderSummeryPopup</span>
-                <span class="method-start">38944 ms</span>
+                <span class="method-start">44731 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Goto</span>
-                <span class="method-start">41650 ms</span>
+                <span class="method-start">47210 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyPaymentPageFromOrderSummary</span>
-                <span class="method-start">42907 ms</span>
+                <span class="method-start">50066 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Goto</span>
-                <span class="method-start">47405 ms</span>
+                <span class="method-start">53718 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyAllPaymentOptionsListedOnPayment</span>
-                <span class="method-start">50022 ms</span>
+                <span class="method-start">56760 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Goto</span>
-                <span class="method-start">55019 ms</span>
+                <span class="method-start">59765 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyUserClickingOnDebitOrCreditCardRedirectsToCardDetailsScreen</span>
-                <span class="method-start">58825 ms</span>
+                <span class="method-start">62884 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Goto</span>
-                <span class="method-start">63378 ms</span>
+                <span class="method-start">68950 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyOrderAmountAfterApplyingCoupon</span>
-                <span class="method-start">65374 ms</span>
+                <span class="method-start">72641 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Goto</span>
-                <span class="method-start">70398 ms</span>
+                <span class="method-start">80183 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">EnterValidCardDetailsAndClickPayNow</span>
-                <span class="method-start">74196 ms</span>
+                <span class="method-start">83297 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Goto</span>
-                <span class="method-start">80555 ms</span>
+                <span class="method-start">90098 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyClickingOnPaynowRedirectUserToBankPaymentScreen</span>
-                <span class="method-start">84173 ms</span>
+                <span class="method-start">93726 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Goto</span>
-                <span class="method-start">105711 ms</span>
+                <span class="method-start">115715 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyClickingOnOKButtonWithValidOTPRedirectToOrderSuccssfullscreen</span>
-                <span class="method-start">109542 ms</span>
+                <span class="method-start">119633 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Goto</span>
-                <span class="method-start">133483 ms</span>
+                <span class="method-start">142203 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyClickingOnOKButtonWithInValidOTPRedirectToOrderSuccssfullscreen</span>
-                <span class="method-start">137080 ms</span>
+                <span class="method-start">145814 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Goto</span>
-                <span class="method-start">163421 ms</span>
+                <span class="method-start">162196 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">VerifyClickingOnCancleButtonShouldRedirectUserToOrderFailedScreen</span>
-                <span class="method-start">166972 ms</span>
+                <span class="method-start">165876 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">251218 ms</span>
+                <span class="method-start">183289 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
